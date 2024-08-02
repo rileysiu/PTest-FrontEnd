@@ -22,7 +22,7 @@ const logoIcon = ref(logoUrl)
                 <RouterLink to="/" class="nav-button-home">登入</RouterLink>
             </v-btn>
             <v-btn rounded="xl" size="x-large" class="bg-teal-accent-4 text-none mx-2">
-                <RouterLink to="/about" class="nav-button-register ">加入PTest</RouterLink>
+                <RouterLink to="/" class="nav-button-register ">加入PTest</RouterLink>
             </v-btn>
         </div>
     </div>

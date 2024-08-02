@@ -30,11 +30,15 @@ const logoIcon = ref(logoUrl)
                 <img :src="menuIcon" />
                 <template #dropdown>
                     <el-dropdown-menu>
-                        <el-dropdown-item>Action 1</el-dropdown-item>
-                        <el-dropdown-item>Action 2</el-dropdown-item>
-                        <el-dropdown-item>Action 3</el-dropdown-item>
-                        <el-dropdown-item disabled>Action 4</el-dropdown-item>
-                        <el-dropdown-item divided>Action 5</el-dropdown-item>
+                        <el-dropdown-item>
+                            <RouterLink to="/" id="nav-button-credit">儲值</RouterLink>
+                        </el-dropdown-item>
+                        <el-dropdown-item>
+                            <RouterLink to="/" id="nav-button-login">登入</RouterLink>
+                        </el-dropdown-item>
+                        <el-dropdown-item>
+                            <RouterLink to="/" id="nav-button-register">加入PTest</RouterLink>
+                        </el-dropdown-item>
                     </el-dropdown-menu>
                 </template>
             </el-dropdown>
@@ -93,7 +97,7 @@ const logoIcon = ref(logoUrl)
             display: none;
         }
         .title-col {
-            min-width: 400px;
+            min-width: 250px;
             justify-content: start;
         }
         .btn-col-desktop {
@@ -101,7 +105,14 @@ const logoIcon = ref(logoUrl)
         }
         .btn-col-mobile {
             display: flex;
+            margin-right: 20px;
+            padding-top: 5px;
         }
+    }
+
+    #nav-button-credit, #nav-button-login, #nav-button-register {
+        text-decoration: none;
+        color: black;
     }
 }
 </style>

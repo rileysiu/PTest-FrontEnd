@@ -1,6 +1,8 @@
 <script setup>
 import NavBar from '@/components/NavBar.vue'
 import Hero from '@/components/Hero.vue'
+import Feature from '@/components/Feature.vue';
+import backToTopIcon from '@/assets/icons/backToTop.svg'
 </script>
 
 <template>
@@ -9,9 +11,11 @@ import Hero from '@/components/Hero.vue'
       <el-header>
         <NavBar />
       </el-header>
-      <el-main>
-        <Hero />
-      </el-main>
+      <Hero />
+      <back-to-top visibleoffset="500">
+        <img :src="backToTopIcon" />
+      </back-to-top>
+      <Feature />
       <el-footer>Footer</el-footer>
     </el-container>
   </div>
@@ -21,5 +25,8 @@ import Hero from '@/components/Hero.vue'
 .el-header {
   --el-header-padding: 0;
   margin-bottom: 20px;
+}
+.el-main {
+  --el-main-padding: 20px 0;
 }
 </style>
