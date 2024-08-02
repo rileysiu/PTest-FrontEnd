@@ -98,8 +98,8 @@ const cardData = reactive([
         align-items: center;
     
         .feature-card {
-            width: 22rem;
-            height: 20rem;
+            width: 22.5rem;
+            height: 22.5rem;
             display: flex;
             flex-direction: column;
             margin: 20px;
