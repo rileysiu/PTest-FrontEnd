@@ -3,6 +3,7 @@ import NavBar from '@/components/NavBar.vue'
 import Hero from '@/components/Hero.vue'
 import Feature from '@/components/Feature.vue';
 import Preview from '@/components/Preview.vue';
+import Step from '@/components/Step.vue';
 
 import backToTopIcon from '@/assets/icons/backToTop.svg'
 </script>
@@ -18,7 +19,8 @@ import backToTopIcon from '@/assets/icons/backToTop.svg'
         <img :src="backToTopIcon" />
       </back-to-top>
       <Feature />
-      <Preview class="preview"/>
+      <Preview/>
+      <Step />
       <el-footer>Footer</el-footer>
     </el-container>
   </div>
