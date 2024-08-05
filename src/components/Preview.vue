@@ -18,14 +18,14 @@ import AnswerCapture from '@/assets/background/answer.webp'
 
 <style scoped>
 .preview-block {
-    width: 80%;
+    width: 100%;
     margin-top: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
     .preview-capture {
-        width: 35rem;
+        width: 45rem;
     }
     .preview-text {
         margin-left: 38px;

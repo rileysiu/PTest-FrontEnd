@@ -15,7 +15,7 @@ const handleClick = (tabsPaneContext, event) => {
         <div class="step-header">PTest人工智慧解題如何運作？</div>
         <el-tabs v-model="activeName" class="step-tabs" @tab-click="handleClick">
             <el-tab-pane label="步驟1" name="first">
-                <img class="step-img" :src="AnswerCapture"/>
+                <img class="step-img" src=""/>
             </el-tab-pane>
             <el-tab-pane label="步驟2" name="second">步驟2</el-tab-pane>
             <el-tab-pane label="步驟3" name="third">步驟3</el-tab-pane>
@@ -42,11 +42,14 @@ const handleClick = (tabsPaneContext, event) => {
     }
 
     .step-tabs {
-        width: 80%;
-
+        width: 60%;
         .step-img {
             width: 100%;
+            height: 600px;
             border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

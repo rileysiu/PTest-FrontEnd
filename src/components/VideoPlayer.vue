@@ -17,7 +17,7 @@ const handleEvent = (log) => {
 </script>
 
 <template>
-    <div>
+    <div class="video-block">
         Video
     </div>
     <!-- <video-player
@@ -45,5 +45,9 @@ const handleEvent = (log) => {
 </template>
 
 <style scoped>
-
+.video-block {
+    border: 1px solid gray;
+    width: 100%;
+    height: 800px;
+}
 </style>
