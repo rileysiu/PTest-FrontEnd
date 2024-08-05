@@ -117,7 +117,7 @@ const consultantData = [
 
     .footer-right {
         width: 60%;
-        overflow-x: scroll;
+        overflow-x: hidden;
         .footer-right-title {
             margin-left: 20px;
             color: #EFFAF8;

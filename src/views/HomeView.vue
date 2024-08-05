@@ -10,6 +10,7 @@ import Comment from '@/components/Comment.vue';
 import QA from '@/components/QA.vue';
 import Start from '@/components/Start.vue';
 import Footer from '@/components/Footer.vue';
+
 </script>
 
 <template>
@@ -23,7 +24,7 @@ import Footer from '@/components/Footer.vue';
         <img :src="backToTopIcon" />
       </back-to-top>
       <Feature />
-      <Preview/>
+      <Preview />
       <Step />
       <Comment />
       <QA />
