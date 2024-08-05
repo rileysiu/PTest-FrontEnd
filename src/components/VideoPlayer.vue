@@ -1,23 +1,26 @@
 <script setup>
-import { VideoPlayer } from '@videojs-player/vue'
-import 'video.js/dist/video-js.css'
+// import { VideoPlayer } from '@videojs-player/vue'
+// import 'video.js/dist/video-js.css'
 import { shallowRef } from 'vue'
 
 const player = shallowRef()
   
-const handleMounted = (payload) => {
+/*const handleMounted = (payload) => {
     player.value = payload.player
     console.log('Basic player mounted', payload)
 }
 
 const handleEvent = (log) => {
     console.log('Basic player event', log)
-}
+}*/
 
 </script>
 
 <template>
-    <video-player
+    <div>
+        Video
+    </div>
+    <!-- <video-player
         class="video-player vjs-big-play-centered"
         src="https://vjs.zencdn.net/v/oceans.mp4"
         poster="https://vjs.zencdn.net/v/oceans.png"
@@ -38,7 +41,7 @@ const handleEvent = (log) => {
         @canplay="handleEvent($event)"
         @canplaythrough="handleEvent($event)"
         @timeupdate="handleEvent(player?.currentTime())"
-    />
+    /> -->
 </template>
 
 <style scoped>
