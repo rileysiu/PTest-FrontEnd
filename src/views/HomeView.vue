@@ -6,6 +6,8 @@ import Preview from '@/components/Preview.vue';
 import Step from '@/components/Step.vue';
 
 import backToTopIcon from '@/assets/icons/backToTop.svg'
+import Comment from '@/components/Comment.vue';
+import QA from '@/components/QA.vue';
 </script>
 
 <template>
@@ -21,6 +23,8 @@ import backToTopIcon from '@/assets/icons/backToTop.svg'
       <Feature />
       <Preview/>
       <Step />
+      <Comment />
+      <QA />
       <el-footer>Footer</el-footer>
     </el-container>
   </div>

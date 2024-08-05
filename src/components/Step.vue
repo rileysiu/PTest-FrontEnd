@@ -1,5 +1,6 @@
 <script setup>
 import AnswerCapture from '@/assets/background/answer.webp'
+import { Picture as IconPicture } from '@element-plus/icons-vue'
 import { ref } from 'vue'
 
 
@@ -13,21 +14,64 @@ const handleClick = (tabsPaneContext, event) => {
 <template>
     <div class="step-block">
         <div class="step-header">PTest人工智慧解題如何運作？</div>
-        <el-tabs v-model="activeName" class="step-tabs" @tab-click="handleClick">
-            <el-tab-pane label="步驟1" name="first">
-                <img class="step-img" src=""/>
+        <el-tabs v-model="activeName" class="step-tabs" @tab-click="handleClick" stretch>
+            <el-tab-pane name="first">
+                <template #label>
+                    <span class="custom-tabs-label">
+                        <span>步驟1</span>
+                    </span>
+                </template>
+                <div class="step-img">
+                    <el-icon><icon-picture /></el-icon>
+                </div>
             </el-tab-pane>
-            <el-tab-pane label="步驟2" name="second">步驟2</el-tab-pane>
-            <el-tab-pane label="步驟3" name="third">步驟3</el-tab-pane>
-            <el-tab-pane label="步驟4" name="fourth">步驟4</el-tab-pane>
-            <el-tab-pane label="步驟5" name="fourth">步驟5</el-tab-pane>
+            <el-tab-pane name="second">
+                <template #label>
+                    <span class="custom-tabs-label">
+                        <span>步驟2</span>
+                    </span>
+                </template>
+                <div class="step-img">
+                    <el-icon><icon-picture /></el-icon>
+                </div>
+            </el-tab-pane>
+            <el-tab-pane name="third">
+                <template #label>
+                    <span class="custom-tabs-label">
+                        <span>步驟3</span>
+                    </span>
+                </template>
+                <div class="step-img">
+                    <el-icon><icon-picture /></el-icon>
+                </div>
+            </el-tab-pane>
+            <el-tab-pane name="fourth">
+                <template #label>
+                    <span class="custom-tabs-label">
+                        <span>步驟4</span>
+                    </span>
+                </template>
+                <div class="step-img">
+                    <el-icon><icon-picture /></el-icon>
+                </div>
+            </el-tab-pane>
+            <el-tab-pane name="fifth">
+                <template #label>
+                    <span class="custom-tabs-label">
+                        <span>步驟5</span>
+                    </span>
+                </template>
+                <div class="step-img">
+                    <el-icon><icon-picture /></el-icon>
+                </div>
+            </el-tab-pane>
         </el-tabs>
     </div>
 </template>
 
 <style scoped>
 .step-block {
-    margin-top: 100px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,14 +87,33 @@ const handleClick = (tabsPaneContext, event) => {
 
     .step-tabs {
         width: 60%;
+        margin-top: 30px;
+        .custom-tabs-label {
+            height: 60px;
+            font-size: 2rem;
+            vertical-align: middle;
+            margin: 20px;
+            color: #42B8A5;
+        }
+
         .step-img {
             width: 100%;
-            height: 600px;
-            border: 1px solid red;
+            height: 800px;
+            margin-top: 20px;
+            color: #82918d;
+            font-size: 3rem;
+            border: 1px solid gray;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
+        
     }
 }
+
+:deep(.el-tabs__active-bar) {
+    background-color: #42B8A5;
+}
+
 </style>
