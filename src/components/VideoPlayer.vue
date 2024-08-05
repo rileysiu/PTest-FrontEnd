@@ -50,4 +50,10 @@ const handleEvent = (log) => {
     width: 100%;
     height: 800px;
 }
+
+@media screen and (max-width:960px) {
+    .video-block {
+        height: 400px;
+    }
+}
 </style>

@@ -70,7 +70,6 @@ import VideoPlayer from './VideoPlayer.vue';
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     /* mobile class not display in large screen*/
@@ -114,6 +113,15 @@ import VideoPlayer from './VideoPlayer.vue';
         /* original class not display in large screen*/
         .title {
             display: none;
+        }
+
+        .upload-block {
+            display: none;
+        }
+
+        .video-display {
+            width: 100%;
+            height: 600px;
         }
     }
 }
