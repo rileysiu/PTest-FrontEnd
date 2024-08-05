@@ -78,7 +78,7 @@ const handleClick = (tabsPaneContext, event) => {
     align-items: center;
 
     .step-header {
-        width: 50%;
+        width: 80%;
         font-size: 5rem;
         font-weight: bold;
         text-align: center;
@@ -86,7 +86,7 @@ const handleClick = (tabsPaneContext, event) => {
     }
 
     .step-tabs {
-        width: 60%;
+        width: 75%;
         margin-top: 30px;
         .custom-tabs-label {
             height: 60px;

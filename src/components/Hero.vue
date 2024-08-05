@@ -51,7 +51,7 @@ import VideoPlayer from './VideoPlayer.vue';
     }
 
     .upload-block {
-        width: 50%;
+        width: 80%;
         height: 50%;
         display: flex;
         justify-content: center;
@@ -60,7 +60,7 @@ import VideoPlayer from './VideoPlayer.vue';
     }
 
     .video-display {
-        width: 50%;
+        width: 80%;
         height: 1000px;
         display: flex;
         justify-content: center;

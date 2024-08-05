@@ -34,7 +34,7 @@ const commentData = [
         <div class="comment-header">助我成功應考的秘密武器</div>
         <el-carousel indicator-position="outside" :autoplay="false" trigger="click" height="450px">
             <el-carousel-item v-for="item in 3" :key="item">
-                <el-row justify="space-between">
+                <el-row justify="center">
                     <el-card v-for="comment in commentData" :key="comment.id">
                         <div class="card-header">
                             <Avatar class="card-avatar" :src="comment.avatarIcon"/>
@@ -62,7 +62,7 @@ const commentData = [
     align-items: center;
 
     .comment-header {
-        width: 50%;
+        width: 80%;
         font-size: 5rem;
         font-weight: bold;
         text-align: center;
@@ -71,7 +71,7 @@ const commentData = [
 
     .el-carousel {
         margin-top: 50px;
-        width: 60%;
+        width: 80%;
         padding: 0 5px;
     }
 
@@ -81,6 +81,7 @@ const commentData = [
     width: 25rem;
     height: 25rem;
     border-radius: 1rem;
+    margin: 0 10px;
 }
 
 .card-header {

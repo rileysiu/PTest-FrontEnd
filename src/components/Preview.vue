@@ -28,7 +28,7 @@ import AnswerCapture from '@/assets/background/answer.webp'
         width: 45rem;
     }
     .preview-text {
-        margin-left: 38px;
+        margin-left: 100px;
         width: 35rem;
         padding-top: 40px;
         display: flex;
