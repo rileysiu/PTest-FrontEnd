@@ -8,6 +8,8 @@ import Step from '@/components/Step.vue';
 import backToTopIcon from '@/assets/icons/backToTop.svg'
 import Comment from '@/components/Comment.vue';
 import QA from '@/components/QA.vue';
+import Start from '@/components/Start.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -25,7 +27,10 @@ import QA from '@/components/QA.vue';
       <Step />
       <Comment />
       <QA />
-      <el-footer>Footer</el-footer>
+      <Start />
+      <el-footer>
+        <Footer />
+      </el-footer>
     </el-container>
   </div>
 </template>
@@ -38,6 +43,10 @@ import QA from '@/components/QA.vue';
 
 .el-main {
   --el-main-padding: 20px 0;
+}
+
+.el-footer {
+  --el-footer-padding: 20px 0;
 }
 
 </style>

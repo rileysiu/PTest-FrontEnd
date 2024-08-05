@@ -76,9 +76,7 @@ const judgeActive = (data) => {
                     <div :class="judgeActive() === '6'? 'qa-close':'qa-expand'"></div>
                 </template>
                 <div class="qa-answer">
-                    Controlled consequences: users should be granted the freedom to
-                    operate, including canceling, aborting or terminating current
-                    operation.
+                    是的，您可以在手機、平板和電腦上使用我們的網站，所有設備上的數據會自動同步，方便您的學習。
                 </div>
             </el-collapse-item>
             </el-collapse>
@@ -104,6 +102,7 @@ const judgeActive = (data) => {
     .el-collapse {
         width: 60%;
         margin-top: 30px;
+        border-bottom: none;
 
         .qa-content {
             border: 3px #EEF1F6 solid;
