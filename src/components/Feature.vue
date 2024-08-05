@@ -102,7 +102,7 @@ const cardData = reactive([
             height: 22.5rem;
             display: flex;
             flex-direction: column;
-            margin: 20px;
+            margin: 40px;
             padding: 15px;
             border-radius: 1.25rem;
             background-color: #FAFCFB;

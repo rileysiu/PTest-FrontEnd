@@ -28,7 +28,7 @@ import UploadFileICon from '@/assets/icons/uploadFile.svg'
 
 <style scoped>
 .upload-area {
-    width: 70%;
+    width: 100%;
     border-radius: 1rem;
     box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.10);
 }

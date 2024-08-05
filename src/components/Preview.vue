@@ -18,6 +18,7 @@ import AnswerCapture from '@/assets/background/answer.webp'
 
 <style scoped>
 .preview-block {
+    width: 80%;
     margin-top: 100px;
     display: flex;
     justify-content: center;

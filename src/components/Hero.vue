@@ -29,6 +29,10 @@ import VideoPlayer from './VideoPlayer.vue';
     radial-gradient(at 13% 78%, hsla(143,100%,76%,1) 0px, transparent 50%),
     radial-gradient(at 86% 80%, hsla(67,100%,61%,0.61) 0px, transparent 50%);
 	animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     .title {
         color: #081B17;
@@ -47,14 +51,16 @@ import VideoPlayer from './VideoPlayer.vue';
     }
 
     .upload-block {
+        width: 50%;
         height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        margin-top: 70px;
     }
 
     .video-display {
+        width: 50%;
         height: 1000px;
         display: flex;
         justify-content: center;
