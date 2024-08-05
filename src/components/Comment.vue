@@ -32,10 +32,28 @@ const commentData = [
 <template>
     <div class="comment-block">
         <div class="comment-header">助我成功應考的秘密武器</div>
-        <el-carousel indicator-position="outside" :autoplay="false" trigger="click" height="450px">
+        <el-carousel indicator-position="outside" :autoplay="false" trigger="click" height="450px" class="carousel-desktop">
             <el-carousel-item v-for="item in 3" :key="item">
                 <el-row justify="center">
                     <el-card v-for="comment in commentData" :key="comment.id">
+                        <div class="card-header">
+                            <Avatar class="card-avatar" :src="comment.avatarIcon"/>
+                            <div class="card-personal">
+                                <div class="card-personal-name">{{ comment.name }}</div>
+                                <div class="card-personal-date">{{ comment.date }}</div>
+                            </div>
+                        </div>
+                        <div class="card-comment">
+                            {{ comment.content }}
+                        </div>
+                    </el-card>
+                </el-row>
+            </el-carousel-item>
+        </el-carousel>
+        <el-carousel indicator-position="outside" :autoplay="false" trigger="click" height="450px" class="carousel-mobile">
+            <el-carousel-item v-for="comment in commentData" :key="comment.id">
+                <el-row justify="center">
+                    <el-card>
                         <div class="card-header">
                             <Avatar class="card-avatar" :src="comment.avatarIcon"/>
                             <div class="card-personal">
@@ -105,5 +123,19 @@ const commentData = [
     font-size: 1.1rem;
     letter-spacing: 0.0375rem;
     padding: 0 10px;
+}
+
+.carousel-mobile {
+    display: none;
+}
+
+@media screen and (max-width:1600px) {
+    .carousel-desktop {
+        display: none;
+    }
+
+    .carousel-mobile {
+        display: block;
+    }
 }
 </style>

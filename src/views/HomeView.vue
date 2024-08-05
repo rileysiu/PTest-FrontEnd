@@ -38,6 +38,7 @@ import Footer from '@/components/Footer.vue';
 
 <style>
 .el-header {
+  min-width: 100%;
   --el-header-padding: 0;
   margin-bottom: 20px;
 }

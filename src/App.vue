@@ -4,14 +4,15 @@ import HomeView from './views/HomeView.vue'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <HomeView />
-    </div>
-  </header>
+  <div class="wrapper">
+    <HomeView />
+  </div>
 </template>
 
 <style scoped>
+.wrapper {
+  min-width: 100%;
+}
 /*header {
   line-height: 1.5;
   max-height: 100vh;

@@ -1,11 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import logoUrl from '@/assets/logo/logo.svg'
-import menuIcon from '@/assets/icons/menu.svg'
+import LogoUrl from '@/assets/logo/logo.svg'
+import MenuIcon from '@/assets/icons/menu.svg'
+import CreditIcon from '@/assets/icons/credit.svg'
+import LogInIcon from '@/assets/icons/login.svg'
+import RegisterIcon from '@/assets/icons/register.svg'
 
 import { ref } from "vue";
 
-const logoIcon = ref(logoUrl)
+const logoIcon = ref(LogoUrl)
 
 </script>
 
@@ -27,17 +30,26 @@ const logoIcon = ref(logoUrl)
         </el-col>
         <el-col :span="2" class="btn-col-mobile">
             <el-dropdown trigger="click">
-                <img :src="menuIcon" />
+                <img :src="MenuIcon" />
                 <template #dropdown>
                     <el-dropdown-menu>
                         <el-dropdown-item>
-                            <RouterLink to="/" id="nav-button-credit">儲值</RouterLink>
+                            <RouterLink to="/" id="nav-button-credit">
+                                <img class="mobile-dropdown-icon":src="CreditIcon">
+                                <div class="mobile-dropdown-text">儲值</div>
+                            </RouterLink>
                         </el-dropdown-item>
                         <el-dropdown-item>
-                            <RouterLink to="/" id="nav-button-login">登入</RouterLink>
+                            <RouterLink to="/" id="nav-button-login">
+                                <img class="mobile-dropdown-icon":src="LogInIcon">
+                                <div class="mobile-dropdown-text">登入</div>
+                            </RouterLink>
                         </el-dropdown-item>
                         <el-dropdown-item>
-                            <RouterLink to="/" id="nav-button-register">加入PTest</RouterLink>
+                            <RouterLink to="/" id="nav-button-register">
+                                <img class="mobile-dropdown-icon":src="RegisterIcon">
+                                <div class="mobile-dropdown-text">加入PTest</div>
+                            </RouterLink>
                         </el-dropdown-item>
                     </el-dropdown-menu>
                 </template>
@@ -110,9 +122,46 @@ const logoIcon = ref(logoUrl)
         }
     }
 
-    #nav-button-credit, #nav-button-login, #nav-button-register {
+    #nav-button-credit, #nav-button-login {
         text-decoration: none;
         color: black;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50px;
+
+        .mobile-dropdown-icon {
+            margin-left: 10px;
+            width: 24px;
+        }
+        .mobile-dropdown-text {
+            font-size: 1.2rem;
+            margin-left: 15px;
+        }
+    }
+
+    #nav-button-register {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50px;
+        text-decoration: none;
+        background-color: #081B17;
+        color: #F2F2F7;
+        padding: 0 20px;
+        border-radius: 1rem;
+
+        .mobile-dropdown-icon {
+            width: 20px;
+        }
+
+        .mobile-dropdown-text {
+            font-size: 1.2rem;
+            margin-left: 10px;
+            
+        }
     }
 }
 </style>

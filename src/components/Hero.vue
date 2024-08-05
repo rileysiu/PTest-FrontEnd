@@ -8,6 +8,10 @@ import VideoPlayer from './VideoPlayer.vue';
         <div class="title">
             使用PTest解鎖考取校長的成功之鑰
         </div>
+        <div class="mobile-title">
+            <p style="font-weight: bold;">使用PTest</p>
+            <p style="font-weight: bold;">解鎖考取校長的成功之鑰</p>
+        </div>
         <div class="subtitle">
             先進AI技術，助您輕鬆準備校長考試。
         </div>
@@ -42,6 +46,7 @@ import VideoPlayer from './VideoPlayer.vue';
         letter-spacing: 0.18rem;
         padding-top: 70px;
     }
+
     .subtitle {
         color: #081B17;
         text-align: center;
@@ -67,6 +72,11 @@ import VideoPlayer from './VideoPlayer.vue';
         align-items: center;
 
     }
+
+    /* mobile class not display in large screen*/
+    .mobile-title {
+        display: none;
+    }
 }
 
 @keyframes gradient {
@@ -79,5 +89,32 @@ import VideoPlayer from './VideoPlayer.vue';
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@media screen and (max-width:960px) {
+    .hero {
+        .mobile-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            padding-top: 70px;
+            font-weight: bolder;
+            letter-spacing: 0.18rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+
+        /* original class not display in large screen*/
+        .title {
+            display: none;
+        }
+    }
 }
 </style>
