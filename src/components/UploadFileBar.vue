@@ -12,21 +12,19 @@ const input = ref('')
 <template>
     <div class="bar-block">
         <div class="bar-upload-icon">
-            <img :src="UploadFileMobileIcon"/>
+            <img class="bar-icon-img" :src="UploadFileMobileIcon"/>
         </div>
         <div class="bar-input">
             <el-input v-model="input" class="bar-input-area" size="large" :suffix-icon="Right" placeholder="輸入題目，獲取最佳解答"/>
         </div>
         <div class="bar-camera-icon">
-            <img :src="CameraIcon"/>
+            <img class="bar-icon-img" :src="CameraIcon"/>
         </div>
     </div>
 </template>
 
 <style scoped>
 .bar-block {
-    /* border: 1px solid red; */
-    /* height: 125px; */
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 21.34%, #FFF 100%);
     display: flex;
     justify-content: space-around;
@@ -59,5 +57,34 @@ const input = ref('')
     /* // 修改icon顏色 */
     --el-input-icon-color: #42B8A5;
 
+}
+
+@media screen and (max-width: 658px) {
+    .bar-block {
+        .bar-upload-icon, .bar-camera-icon {
+            .bar-icon-img {
+                width: 60px;
+            }
+        }
+
+        .bar-input {
+            width: 65%;
+        }
+    }
+
+    :deep(.bar-input-area .el-input__wrapper) {
+        margin-top: 35px;
+        border-radius: 2.5rem;
+        height: 60px;
+        font-size: 1.15rem;
+        padding-left: 20px;
+        /* 修改input輸入框字體顏色 */
+        --el-input-text-color: #42B8A5;
+        /* 修改input placeholder字體顏色 */
+        --el-input-placeholder-color: #5A736E;
+        /* // 修改icon顏色 */
+        --el-input-icon-color: #42B8A5;
+
+    }
 }
 </style>
