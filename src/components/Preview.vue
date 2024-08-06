@@ -87,6 +87,9 @@ import AnswerCapture from '@/assets/background/answer.webp'
             display: flex;
             justify-content: center;
             align-items: center;
+            .preview-title {
+                font-size: 2.5rem;
+            }
         }
     }
 }

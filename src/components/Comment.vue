@@ -217,5 +217,12 @@ const commentData2 = [
             font-size: 3rem;
         }
     }
+
+    .card-comment {
+        color: #5A736E;
+        font-size: 1.1rem;
+        letter-spacing: 0.0375rem;
+        padding: 0 10px;
+    }
 }
 </style>

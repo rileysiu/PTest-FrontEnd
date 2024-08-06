@@ -159,11 +159,12 @@ const cardData = reactive([
 @media screen and (max-width: 960px) {
     .title-block {
         .title-text {
-            font-size: 2.5rem;
-            line-height: 60px;
+            font-size: 2rem;
+            line-height: 45px;
         }
         .subtitle-text {
-            margin-top: 20px;
+
+            margin: 20px 40px 0 40px;
             font-size: 1.3rem;
             font-weight: 400;
             letter-spacing: 0.06px;
