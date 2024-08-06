@@ -93,4 +93,25 @@ import AnswerCapture from '@/assets/background/answer.webp'
         }
     }
 }
+
+@media screen and (max-width:658px) {
+    .preview-block {
+        flex-wrap: wrap-reverse;
+
+        .preview-capture {
+            width: 85%;
+            margin-top: 40px;
+        }
+        .preview-text {
+            width: 85%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .preview-title {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
 </style>
