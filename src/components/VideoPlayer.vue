@@ -18,42 +18,22 @@ const handleEvent = (log) => {
 
 <template>
     <div class="video-block">
-        Video
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="https://videos.pexels.com/video-files/854182/854182-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
     </div>
-    <!-- <video-player
-        class="video-player vjs-big-play-centered"
-        src="https://vjs.zencdn.net/v/oceans.mp4"
-        poster="https://vjs.zencdn.net/v/oceans.png"
-        crossorigin="anonymous"
-        playsinline
-        controls
-        :volume="0.6"
-        :height="700"
-        :playback-rates="[0.7, 1.0, 1.5, 2.0]"
-        @mounted="handleMounted"
-        @ready="handleEvent($event)"
-        @play="handleEvent($event)"
-        @pause="handleEvent($event)"
-        @ended="handleEvent($event)"
-        @loadeddata="handleEvent($event)"
-        @waiting="handleEvent($event)"
-        @playing="handleEvent($event)"
-        @canplay="handleEvent($event)"
-        @canplaythrough="handleEvent($event)"
-        @timeupdate="handleEvent(player?.currentTime())"
-    /> -->
 </template>
 
 <style scoped>
 .video-block {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     width: 100%;
-    height: 800px;
+    height: auto;
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:1366px) {
     .video-block {
-        height: 400px;
+        height: auto;
     }
 }
 </style>

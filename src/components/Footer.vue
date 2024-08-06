@@ -60,7 +60,7 @@ const consultantData = [
                         <div>使用PTest 甄慧考，掌握AI時代的考試準備利器</div>
                         <div>提升學習效率，輕鬆應對校長考試挑戰。</div>
                     </div>
-                    <div>
+                    <div class="footer-left-credit">
                         © 2024 PTest 甄慧考 by 廣臻科技. All rights reserved.
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const consultantData = [
         </div>
         <div class="footer-right">
             <div class="footer-right-title">專業顧問</div>
-            <el-row>
+            <div class="footer-right-content">
                 <div v-for="consultant in consultantData" :key="consultant.id" class="footer-right-consultant">
                     <img :src="consultant.avatar" class="footer-right-consultant-icon"/>
                     <div class="footer-right-consultant-detail">
@@ -77,7 +77,10 @@ const consultantData = [
                         <div>{{ consultant.position }}</div>
                     </div>
                 </div>
-            </el-row>
+            </div>
+        </div>
+        <div class="footer-credit">
+            © 2024 PTest 甄慧考 by 廣臻科技. All rights reserved.
         </div>
     </div>
 </template>
@@ -116,8 +119,9 @@ const consultantData = [
     }
 
     .footer-right {
-        width: 60%;
-        overflow-x: hidden;
+        width: 70%;
+        margin-left: 50px;
+        overflow-x: scroll;
         .footer-right-title {
             margin-left: 20px;
             color: #EFFAF8;
@@ -126,21 +130,160 @@ const consultantData = [
             line-height: 2.25rem; /* 150% */
             letter-spacing: 0.045rem;
         }
+        
+        .footer-right-content {
+            display: flex;
+            .footer-right-consultant {
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: #EFFAF8;
+    
+                .footer-right-consultant-icon {
+                    width: 200px;
+                }
+    
+                .footer-right-consultant-detail {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+        }
 
-        .footer-right-consultant {
-            margin: 20px;
+    }
+
+    .footer-credit{
+        display: none;
+    }
+}
+
+.footer-right::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.footer-right::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px rgb(83, 83, 83);  */
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.footer-right::-webkit-scrollbar-thumb {
+  background: rgb(78, 78, 78); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.footer-right::-webkit-scrollbar-thumb:hover {
+  background: rgb(49, 49, 49); 
+}
+
+@media screen and (max-width:1410px) {
+    .footer-block {
+        height: 800px;
+        .footer-left {
+            width: 35%;
+            .footer-left-title {
+                .footer-left-content {
+                    height: 300px;
+                    color: #EFFAF8;
+                    font-size: 1rem;
+                    line-height: 2.25rem; /* 180% */
+                    letter-spacing: 0.0375rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .footer-right {
+            width: 55%;
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    .footer-block {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 1000px;
+        .footer-left {
+            width: 100%;
+            .footer-left-title {
+                align-items: center;
+                .footer-left-content {
+                    margin-top: 30px;
+                    height: 20%;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    .footer-left-credit {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .footer-right{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 30px;
+            .footer-right-title {
+                text-align: center;
+                margin-right: 20px;
+            }
+        }
+
+        .footer-credit {
+            display: block;
+            width: 95%;
+            padding-top: 50px;
+            color: #EFFAF8;
+            font-size: 1.1rem;
+            line-height: 2.25rem; /* 180% */
+            letter-spacing: 0.0375rem;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            color: #EFFAF8;
+            justify-content: space-between;
+        }
+    }
+}
 
-            .footer-right-consultant-icon {
-                width: 200px;
+@media screen and (max-width:658px) {
+    .footer-block {
+        .footer-left {
+            .footer-left-title {
+                .footer-left-content {
+                    height: 20%;
+                    width: 100%;
+                    font-size: 1.1rem;
+                    text-align: center;
+                    .footer-left-credit {
+                        display: none;
+                    }
+                }
             }
+        }
 
-            .footer-right-consultant-detail {
+        .footer-right{
+            .footer-right-title {
                 text-align: center;
-                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:658px) {
+    .footer-block {
+        padding: 50px 20px;
+        .footer-left {
+            .footer-left-title {
+                .footer-left-content {
+                    font-size: 1rem;
+                }
             }
         }
     }

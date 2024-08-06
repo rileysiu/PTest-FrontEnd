@@ -10,8 +10,8 @@ import { reactive } from 'vue'
 const cardData = reactive([
     {
         index: 1,
-        title: "考題快速上傳",
-        content: "輕鬆上傳考題照片和檔案，系統自動識別文字並進行解答，免去手動輸入的麻煩。",
+        title: "AI智能解答",
+        content: "運用先進的AI技術，即時分析考古題並提供最佳答案，讓您的學習過程更加高效。",
         icon: UploadICon
     },
     {
@@ -90,7 +90,7 @@ const cardData = reactive([
     justify-content: center;
     align-items: center;
     .feature-group {
-        width: 75%;
+        width: 100%;
         margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
@@ -123,5 +123,52 @@ const cardData = reactive([
             }
         }
     }
+}
+
+@media screen and (max-width: 1410px) {
+    .title-block {
+        .title-text {
+            font-size: 4rem;
+            letter-spacing: 0.18rem;
+            font-weight: bolder;
+            line-height: 80px;
+        }
+
+        .subtitle-text {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.06px;
+        }
+    }
+
+    .feature-block {
+        .feature-group {
+            width: 100%;
+            .feature-card {
+                /* width: 22rem; */
+                min-width: 300px;
+                height: 22.5rem;
+                margin: 20px;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .title-block {
+        .title-text {
+            font-size: 2.5rem;
+            line-height: 60px;
+        }
+        .subtitle-text {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-weight: 400;
+            letter-spacing: 0.06px;
+        }
+    }
+
 }
 </style>

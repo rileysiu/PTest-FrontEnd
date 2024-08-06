@@ -26,13 +26,6 @@ import VideoPlayer from './VideoPlayer.vue';
 
 <style>
 .hero {
-    /*background: linear-gradient(-45deg, #d1ffe7, #fffdbb, #fffdbb, #d1ffe7 60%);
-	background-size: 400% 400%;*/
-    background-color:hsla(101,0%,100%,1);
-    background-image:
-    radial-gradient(at 13% 78%, hsla(143,100%,76%,1) 0px, transparent 50%),
-    radial-gradient(at 86% 80%, hsla(67,100%,61%,0.61) 0px, transparent 50%);
-	animation: gradient 15s ease infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,16 +71,40 @@ import VideoPlayer from './VideoPlayer.vue';
     }
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+@media screen and (max-width:1410px) {
+    .hero {
+        .mobile-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            padding-top: 70px;
+            font-weight: bolder;
+            letter-spacing: 0.18rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 30px 0;
+        }
+
+
+        /* original class not display in large screen*/
+        .title {
+            display: none;
+        }
+
+        .upload-block {
+            display: none;
+        }
+
+        .video-display {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 @media screen and (max-width:960px) {
@@ -106,7 +123,7 @@ import VideoPlayer from './VideoPlayer.vue';
         .subtitle {
             font-size: 1.2rem;
             font-weight: 400;
-            margin-top: 10px;
+            margin: 20px 0;
         }
 
 
@@ -121,7 +138,7 @@ import VideoPlayer from './VideoPlayer.vue';
 
         .video-display {
             width: 100%;
-            height: 600px;
+            height: auto;
         }
     }
 }

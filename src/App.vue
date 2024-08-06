@@ -1,17 +1,44 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HomeView from './views/HomeView.vue'
+import UploadFileBar from '@/components/UploadFileBar.vue';
+
 </script>
 
 <template>
   <div class="wrapper">
     <HomeView />
   </div>
+  <UploadFileBar class="upload-bar"/>
 </template>
 
 <style scoped>
 .wrapper {
   min-width: 100%;
+  background-attachment: fixed;
+  background-color:hsla(101,0%,100%,1);
+  background-image:
+  radial-gradient(at 13% 78%, hsla(143,100%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 86% 80%, hsla(67,100%,61%,0.61) 0px, transparent 50%);
+}
+
+.upload-bar {
+  display: none;
+  /* display: block; */
+  position: fixed;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+}
+
+@media screen and (max-width:1410px) {
+  .upload-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+  }
 }
 /*header {
   line-height: 1.5;

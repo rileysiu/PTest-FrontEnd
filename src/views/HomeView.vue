@@ -14,26 +14,25 @@ import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
-  <div class="common-layout">
-    <el-container>
-      <el-header>
-        <NavBar />
-      </el-header>
-      <Hero />
-      <back-to-top visibleoffset="500">
-        <img :src="backToTopIcon" />
-      </back-to-top>
-      <Feature />
-      <Preview />
-      <Step />
-      <Comment />
-      <QA />
-      <Start />
-      <el-footer>
-        <Footer />
-      </el-footer>
-    </el-container>
-  </div>
+  
+  <back-to-top visibleoffset="500" bottom="150px" right="3.5%">
+    <img :src="backToTopIcon" />
+  </back-to-top>
+  <!-- <el-container> -->
+  <el-header>
+    <NavBar />
+  </el-header>
+  <Hero />
+  <Feature />
+  <Preview />
+  <Step />
+  <Comment />
+  <QA />
+  <Start />
+  <el-footer>
+    <Footer />
+  </el-footer>
+  <!-- </el-container> -->
 </template>
 
 <style>
@@ -43,12 +42,8 @@ import Footer from '@/components/Footer.vue';
   margin-bottom: 20px;
 }
 
-.el-main {
-  --el-main-padding: 20px 0;
-}
-
 .el-footer {
-  --el-footer-padding: 20px 0;
+  --el-footer-padding: 0;
 }
 
 </style>

@@ -66,6 +66,13 @@ const handleClick = (tabsPaneContext, event) => {
                 </div>
             </el-tab-pane>
         </el-tabs>
+        <el-carousel height="500px" motion-blur arrow="always" class="step-carousel" :autoplay="false" trigger="click">
+            <el-carousel-item v-for="item in 4" :key="item">
+                <div class="step-carousel-item">
+                    <strong>步驟{{ item }}</strong>
+                </div>
+            </el-carousel-item>
+        </el-carousel>
     </div>
 </template>
 
@@ -78,27 +85,28 @@ const handleClick = (tabsPaneContext, event) => {
     align-items: center;
 
     .step-header {
-        width: 80%;
+        width: 85%;
         font-size: 5rem;
         font-weight: bold;
         text-align: center;
         color: #081B17;
+        letter-spacing: 1.92px;
     }
 
     .step-tabs {
         width: 75%;
         margin-top: 30px;
+
         .custom-tabs-label {
             height: 60px;
             font-size: 2rem;
             vertical-align: middle;
-            margin: 20px;
-            color: #42B8A5;
+            color: #081B17;
         }
 
         .step-img {
             width: 100%;
-            height: 800px;
+            height: 600px;
             margin-top: 20px;
             color: #82918d;
             font-size: 3rem;
@@ -112,8 +120,52 @@ const handleClick = (tabsPaneContext, event) => {
     }
 }
 
+:deep(.el-tabs__nav) {
+    height: 50px;
+}
+
 :deep(.el-tabs__active-bar) {
     background-color: #42B8A5;
 }
 
+@media screen and (max-width:1410px) {
+    .step-block {
+        .step-header {
+            font-size: 64px;
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .step-block {
+        .step-header {
+            font-size: 50px;
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    .step-block {
+        .step-header {
+            font-size: 40px;
+        }
+
+        .step-tabs {
+            display: none;
+        }
+
+        .step-carousel {
+            width: 95%;
+            /* border: 1px lightgray solid; */
+            
+            .step-carousel-item {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: xx-large;
+            }
+        }
+    }
+}
 </style>

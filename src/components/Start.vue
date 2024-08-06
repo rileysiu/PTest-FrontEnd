@@ -65,4 +65,29 @@
     }
 
 }
+
+@media screen and (max-width:1280px) {
+    .start-block {
+        .start-background {
+            .start-title {
+                font-size: 3rem;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .start-block {
+        .start-background {
+            width: 90%;
+            .start-title {
+                font-size: 2.5rem;
+            }
+            .start-subtitle {
+                font-size: 1rem;
+            }
+        }
+    }
+}
 </style>

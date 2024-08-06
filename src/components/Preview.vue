@@ -49,4 +49,45 @@ import AnswerCapture from '@/assets/background/answer.webp'
         }
     }
 }
+
+@media screen and (max-width:1410px) {
+    .preview-block {
+        width: 100%;
+        .preview-capture {
+            width: 35rem;
+        }
+        .preview-text {
+            margin-left: 50px;
+            width: 25rem;
+
+            .preview-title {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            .preview-content {
+                font-size: 1.25rem;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .preview-block {
+        flex-wrap: wrap-reverse;
+
+        .preview-capture {
+            width: 85%;
+            margin-top: 40px;
+        }
+        .preview-text {
+            width: 85%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
 </style>
