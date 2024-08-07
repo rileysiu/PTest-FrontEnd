@@ -15,8 +15,8 @@ import Footer from '@/components/Footer.vue';
 
 <template>
   
-  <back-to-top visibleoffset="500" bottom="150px" right="3.5%">
-    <img :src="backToTopIcon" />
+  <back-to-top visibleoffset="500" bottom="150px" right="2rem">
+    <img class="back-top-icon" :src="backToTopIcon" />
   </back-to-top>
   <!-- <el-container> -->
   <el-header>
@@ -44,6 +44,12 @@ import Footer from '@/components/Footer.vue';
 
 .el-footer {
   --el-footer-padding: 0;
+}
+
+@media screen and (max-width: 658px) {
+  .back-top-icon {
+    width: 55px;
+  }
 }
 
 </style>
