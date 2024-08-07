@@ -18,7 +18,7 @@ const handleEvent = (log) => {
 
 <template>
     <div class="video-block">
-        <video width="100%" height="auto" controls autoplay muted>
+        <video width="100%" height="100%" autoplay muted playsinline>
             <source src="https://videos.pexels.com/video-files/854182/854182-hd_1920_1080_25fps.mp4" type="video/mp4">
         </video>
     </div>
@@ -28,7 +28,7 @@ const handleEvent = (log) => {
 .video-block {
     /* border: 1px solid gray; */
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 @media screen and (max-width:1366px) {

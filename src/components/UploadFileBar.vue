@@ -76,7 +76,7 @@ const input = ref('')
         margin-top: 35px;
         border-radius: 2.5rem;
         height: 60px;
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         padding-left: 20px;
         /* 修改input輸入框字體顏色 */
         --el-input-text-color: #42B8A5;
