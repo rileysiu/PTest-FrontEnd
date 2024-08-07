@@ -86,11 +86,11 @@ const handleClick = (tabsPaneContext, event) => {
 
     .step-header {
         width: 85%;
-        font-size: 5rem;
-        font-weight: bold;
+        font-size: 6rem;
+        font-weight: 700;
         text-align: center;
         color: #081B17;
-        letter-spacing: 1.92px;
+        letter-spacing: 2.5px;
     }
 
     .step-tabs {

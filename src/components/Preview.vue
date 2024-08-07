@@ -25,11 +25,13 @@ import AnswerCapture from '@/assets/background/answer.webp'
     flex-wrap: wrap;
 
     .preview-capture {
+        border-radius: 1rem;
         width: 45rem;
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.10);
     }
     .preview-text {
-        margin-left: 100px;
-        width: 35rem;
+        margin-left: 50px;
+        width: 42rem;
         padding-top: 40px;
         display: flex;
         flex-direction: column;

@@ -90,7 +90,7 @@ const cardData = reactive([
     justify-content: center;
     align-items: center;
     .feature-group {
-        width: 100%;
+        width: 80%;
         margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
@@ -98,9 +98,9 @@ const cardData = reactive([
         align-items: center;
     
         .feature-card {
-            width: 22.5rem;
+            width: 27rem;
             min-width: 400px;
-            height: 22.5rem;
+            height: 23rem;
             display: flex;
             flex-direction: column;
             margin: 40px;
@@ -116,7 +116,7 @@ const cardData = reactive([
 
             .feature-card-content {
                 margin-top: 10px;
-                font-size: 1.15rem;
+                font-size: 1.46rem;
                 color: #5A736E;
                 letter-spacing: 0.045rem;
                 line-height: 2.5rem;

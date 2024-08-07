@@ -126,7 +126,7 @@ const commentData2 = [
 
     .comment-header {
         width: 80%;
-        font-size: 5rem;
+        font-size: 6rem;
         font-weight: bold;
         text-align: center;
         color: #081B17;
@@ -140,24 +140,31 @@ const commentData2 = [
 }
 
 .el-card {
-    width: 25rem;
-    height: 25rem;
+    width: 27.5rem;
+    height: 27.5rem;
     border-radius: 1rem;
-    margin: 0 10px;
+    margin: 0 25px;
 }
 
 .card-header {
     display: flex;
     .card-avatar {
         margin: 20px;
+        width: 80px;
+        height: 80px;
     }
 
     .card-personal {
         margin: 20px 0 0 10px;
         
         .card-personal-name {
-            font-size: 1.1rem;
+            font-size: 1.75rem;
             font-weight: bold;
+        }
+
+        .card-personal-date {
+            font-size: 1.25rem;
+            font-weight: 400;
         }
     }
 }
@@ -165,8 +172,8 @@ const commentData2 = [
 .card-comment {
     color: #5A736E;
     font-size: 1.1rem;
-    letter-spacing: 0.0375rem;
-    padding: 0 10px;
+    letter-spacing: 2px;
+    padding: 15px;
 }
 
 .carousel-mobile {

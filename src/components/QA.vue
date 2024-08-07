@@ -92,15 +92,15 @@ const judgeActive = (data) => {
     align-items: center;
 
     .qa-header {
-        width: 50%;
-        font-size: 5rem;
+        width: 80%;
+        font-size: 6rem;
         font-weight: bold;
         text-align: center;
         color: #081B17;
     }
 
     .el-collapse {
-        width: 60%;
+        width: 77.5%;
         margin-top: 30px;
         border-bottom: none;
         border-top: none;
@@ -108,8 +108,8 @@ const judgeActive = (data) => {
 
         .qa-content {
             border: 3px #EEF1F6 solid;
-            border-radius: 1.25rem;
-            padding: 20px;
+            border-radius: 1.3rem;
+            padding: 25px 35px;
             margin-bottom: 20px;
             background-color: white;
 
@@ -117,7 +117,7 @@ const judgeActive = (data) => {
                 margin-top: 20px;
                 color: #5A736E;
                 letter-spacing: 0.0525rem;
-                font-size: 1.5rem;
+                font-size: 1.75rem;
                 background-color: transparent;
             }
         }

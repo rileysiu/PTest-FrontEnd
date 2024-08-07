@@ -23,7 +23,7 @@
     align-items: center;
 
     .start-background {
-        width: 60%;
+        width: 77.5%;
         height: 500px;
         border-radius: 2rem;
         background-color: #b2e8db6b;
@@ -35,7 +35,7 @@
 
         .start-title {
             width: 100%;
-            font-size: 5rem;
+            font-size: 6rem;
             font-weight: bold;
             text-align: center;
             color: #081B17;

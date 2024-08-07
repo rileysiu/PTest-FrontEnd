@@ -1,5 +1,5 @@
 <script setup>
-import LogoIcon from '@/assets/logo/logo.svg'
+import LogoIcon from '@/assets/logo/logo_footer.svg'
 import AvatarIcon1 from '@/assets/icons/avatar/person4.svg'
 import AvatarIcon2 from '@/assets/icons/avatar/person5.svg'
 import AvatarIcon3 from '@/assets/icons/avatar/person6.svg'
@@ -107,6 +107,7 @@ const consultantData = [
             }
             .footer-left-content {
                 height: 300px;
+                margin-top: 20px;
                 color: #EFFAF8;
                 font-size: 1.25rem;
                 line-height: 2.25rem; /* 180% */
