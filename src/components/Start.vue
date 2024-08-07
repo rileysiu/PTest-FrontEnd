@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="start-block">
+    <div class="start-block" v-motion-slide-visible-top>
         <div class="start-background">
             <div class="start-title">考試成功從這裡開始</div>
             <div class="start-subtitle">準備好利用PTest 甄慧考 提升您的考試成功率了嗎?</div>
