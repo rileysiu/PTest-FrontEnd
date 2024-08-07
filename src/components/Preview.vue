@@ -3,7 +3,7 @@ import AnswerCapture from '@/assets/background/answer.webp'
 </script>
 
 <template>
-    <div class="preview-block">
+    <div class="preview-block" v-motion-fade-visible>
         <img :src="AnswerCapture" class="preview-capture" />
         <div class="preview-text">
             <div class="preview-title">

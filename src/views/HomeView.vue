@@ -10,11 +10,12 @@ import Comment from '@/components/Comment.vue';
 import QA from '@/components/QA.vue';
 import Start from '@/components/Start.vue';
 import Footer from '@/components/Footer.vue';
+import TsParticles from '@/components/TsParticles.vue';
 
 </script>
 
 <template>
-  
+  <TsParticles />
   <back-to-top visibleoffset="500" bottom="150px" right="2rem">
     <img class="back-top-icon" :src="backToTopIcon" />
   </back-to-top>

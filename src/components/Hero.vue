@@ -4,7 +4,10 @@ import VideoPlayer from './VideoPlayer.vue';
 </script>
 
 <template>
-    <div class="hero">
+    <div
+        class="hero"
+        v-motion-slide-visible-bottom
+    >
         <div class="title">
             使用PTest解鎖考取校長的成功之鑰
         </div>

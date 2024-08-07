@@ -75,7 +75,7 @@ const commentData2 = [
 </script>
 
 <template>
-    <div class="comment-block">
+    <div class="comment-block" v-motion-pop-visible>
         <div class="comment-header">助我成功應考的秘密武器</div>
         <el-carousel indicator-position="outside" :autoplay="false" trigger="click" height="450px" class="carousel-desktop">
             <el-carousel-item v-for="item in 3" :key="item">

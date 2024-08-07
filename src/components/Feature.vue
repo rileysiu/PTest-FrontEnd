@@ -49,12 +49,12 @@ const cardData = reactive([
 </script>
 
 <template>
-    <div class="title-block">
+    <div class="title-block" v-motion-slide-visible-bottom>
         <div class="title-text">智能解答輕鬆應考</div>
         <div class="title-text">助您高效通過校長考試</div>
         <div class="subtitle-text">利用AI技術快速獲取精確答案，提升您的學習效率和考試成功率。</div>
     </div>
-    <div class="feature-block">
+    <div class="feature-block" v-motion-pop-visible>
         <div class="feature-group">
             <el-card v-for="card in cardData" :key="card" class="feature-card">
                 <img :src="card.icon"/>

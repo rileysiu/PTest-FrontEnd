@@ -13,6 +13,12 @@ import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 
 import BackToTop from 'vue-backtotop'
 
+// tsParticles
+import Particles from "vue3-particles";
+
+// vueuse/motion
+import { MotionPlugin } from '@vueuse/motion'
+
 import App from './App.vue'
 import router from './router'
 
@@ -27,5 +33,7 @@ app.use(router)
 app.use(ElementPlus)
 app.use(autoAnimatePlugin)
 app.use(BackToTop)
+app.use(Particles)
+app.use(MotionPlugin)
 
 app.mount('#app')

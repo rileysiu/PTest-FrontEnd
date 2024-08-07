@@ -7,7 +7,6 @@ const handleChange = (val) => {
 }
 
 const judgeActive = (data) => {
-    console.log(activeNames)
     return activeNames.value
 }
 </script>

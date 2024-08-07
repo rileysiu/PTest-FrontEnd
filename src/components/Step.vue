@@ -12,7 +12,7 @@ const handleClick = (tabsPaneContext, event) => {
 </script>
 
 <template>
-    <div class="step-block">
+    <div class="step-block" v-motion-fade-visible>
         <div class="step-header">PTest人工智慧解題如何運作？</div>
         <el-tabs v-model="activeName" class="step-tabs" @tab-click="handleClick" stretch>
             <el-tab-pane name="first">
