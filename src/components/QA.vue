@@ -168,6 +168,18 @@ const judgeActive = (data) => {
     border-bottom: none;
 }
 
+@media screen and (max-width:1366px) {
+    .qa-block {
+        .qa-header {
+            width: 80%;
+            font-size: 4rem;
+        }
+        .el-collapse {
+            width: 80%;
+        }
+    }
+}
+
 @media screen and (max-width:1000px) {
     .qa-block {
         .qa-header {

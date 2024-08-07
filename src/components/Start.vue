@@ -66,6 +66,22 @@
 
 }
 
+@media screen and (max-width:1366px) {
+    .start-block {
+        .start-background {
+            width: 80%;
+            .start-title {
+                font-size: 4rem;
+            }
+            .start-subtitle {
+                font-size: 1.5rem;
+                margin: 0 50px;
+                text-align: center;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1280px) {
     .start-block {
         .start-background {

@@ -30,7 +30,7 @@ const logoIcon = ref(LogoUrl)
         </el-col>
         <el-col :span="2" class="btn-col-mobile">
             <el-dropdown trigger="click">
-                <img :src="MenuIcon" />
+                <img class="menu-icon" :src="MenuIcon" />
                 <template #dropdown>
                     <el-dropdown-menu>
                         <el-dropdown-item>
@@ -103,7 +103,7 @@ const logoIcon = ref(LogoUrl)
     }
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:1366px) {
     .nav-row {
         .title-empty {
             display: none;
@@ -117,8 +117,13 @@ const logoIcon = ref(LogoUrl)
         }
         .btn-col-mobile {
             display: flex;
-            margin-right: 20px;
+            justify-content: flex-end;
+            /* margin-right: 20px; */
             padding-top: 5px;
+
+            .menu-icon {
+                width: 50px;
+            }
         }
     }
 

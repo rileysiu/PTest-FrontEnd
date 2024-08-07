@@ -54,11 +54,11 @@ import AnswerCapture from '@/assets/background/answer.webp'
     .preview-block {
         width: 100%;
         .preview-capture {
-            width: 35rem;
+            width: 37rem;
         }
         .preview-text {
             margin-left: 50px;
-            width: 25rem;
+            width: 27.25rem;
 
             .preview-title {
                 font-size: 2.5rem;
@@ -66,7 +66,9 @@ import AnswerCapture from '@/assets/background/answer.webp'
             }
 
             .preview-content {
-                font-size: 1.25rem;
+                margin-top: 15px;
+                font-size: 1.15rem;
+                letter-spacing: 0.5px;
             }
         }
         

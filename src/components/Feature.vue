@@ -144,12 +144,12 @@ const cardData = reactive([
 
     .feature-block {
         .feature-group {
-            width: 100%;
+            width: 85%;
             .feature-card {
-                /* width: 22rem; */
-                min-width: 300px;
+                width: 21.5rem;
+                min-width: 200px;
                 height: 22.5rem;
-                margin: 20px;
+                margin: 10px;
                 padding: 15px;
             }
         }

@@ -181,6 +181,31 @@ const commentData2 = [
     }
 }
 
+@media screen and (max-width:1366px) {
+    .comment-block {
+        .comment-header {
+            font-size: 4rem;
+        }
+        .el-carousel {
+            width: 85%;
+        }
+    }
+
+    .el-card {
+        width: 21.5rem;
+        height: 25rem;
+        border-radius: 1rem;
+        margin: 0 10px;
+    }
+
+    .card-comment {
+        color: #5A736E;
+        font-size: 1rem;
+        letter-spacing: 0.0375rem;
+        padding: 0 10px;
+    }
+}
+
 @media screen and (max-width:1285px) {
     .comment-block {
         .comment-header {

@@ -114,9 +114,11 @@ const handleClick = (tabsPaneContext, event) => {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
+        }   
+    }
 
-        
+    .step-carousel {
+        display: none;
     }
 }
 
@@ -132,6 +134,10 @@ const handleClick = (tabsPaneContext, event) => {
     .step-block {
         .step-header {
             font-size: 64px;
+        }
+
+        .step-tabs {
+            width: 80%;
         }
     }
 }
