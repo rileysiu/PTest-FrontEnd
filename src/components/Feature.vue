@@ -1,4 +1,5 @@
 <script setup>
+import AIICon from '@/assets/icons/feature_ai.svg'
 import UploadICon from '@/assets/icons/feature_upload.svg'
 import DeviceICon from '@/assets/icons/feature_device.svg'
 import ReocrdICon from '@/assets/icons/feature_record.svg'
@@ -12,7 +13,7 @@ const cardData = reactive([
         index: 1,
         title: "AI智能解答",
         content: "運用先進的AI技術，即時分析考古題並提供最佳答案，讓您的學習過程更加高效。",
-        icon: UploadICon
+        icon: AIICon
     },
     {
         index: 2,
@@ -158,16 +159,47 @@ const cardData = reactive([
 
 @media screen and (max-width: 960px) {
     .title-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .title-text {
             font-size: 2rem;
             line-height: 45px;
         }
         .subtitle-text {
-
+            width: 72%;
             margin: 20px 40px 0 40px;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: 400;
-            letter-spacing: 0.06px;
+            letter-spacing: 3px;
+        }
+    }
+
+    .feature-block {
+        .feature-group {
+            width: 95%;
+            .feature-card {
+                width: 190px;
+                min-width: 190px;
+                height: 23rem;
+                margin: 10px 5px;
+                padding: 2px;
+                
+                .feature-card-title {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    letter-spacing: 0.06rem;
+                }
+
+                .feature-card-content {
+                    margin-top: 10px;
+                    font-size: 1.1rem;
+                    color: #5A736E;
+                    letter-spacing: 0.045rem;
+                    line-height: 1.85rem;
+                }
+            }
         }
     }
 

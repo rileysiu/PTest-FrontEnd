@@ -161,6 +161,7 @@ const handleClick = (tabsPaneContext, event) => {
         }
 
         .step-carousel {
+            display: block;
             width: 95%;
             /* border: 1px lightgray solid; */
             
@@ -171,6 +172,15 @@ const handleClick = (tabsPaneContext, event) => {
                 align-items: center;
                 font-size: xx-large;
             }
+        }
+    }
+}
+
+@media screen and (max-width:658px) {
+    .step-block {
+        .step-header {
+            width: 100%;
+            font-size: 25px;
         }
     }
 }

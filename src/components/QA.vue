@@ -208,4 +208,35 @@ const judgeActive = (data) => {
         background-color: transparent;
     }
 }
+
+@media screen and (max-width:658px) {
+    .qa-block {
+        .qa-header {
+            width: 90%;
+            font-size: 25px;
+        }
+        .el-collapse {
+            width: 90%;
+            .qa-content {
+                border: 3px #EEF1F6 solid;
+                border-radius: 1.3rem;
+                padding: 10px 20px;
+                margin-bottom: 20px;
+                background-color: white;
+                .qa-answer {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    :deep(.el-collapse-item__header) {
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 0.01rem;
+        justify-content: space-between;
+        border-bottom: none;
+        background-color: transparent;
+    }
+}
 </style>

@@ -287,6 +287,10 @@ const consultantData = [
                 }
             }
         }
+
+        .footer-credit {
+            font-size: 0.9rem;
+        }
     }
 }
 </style>

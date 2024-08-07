@@ -257,4 +257,42 @@ const commentData2 = [
         padding: 0 10px;
     }
 }
+
+@media screen and (max-width:658px) {
+    .comment-block {
+        .comment-header {
+            font-size: 25px;
+        }
+    }
+
+    .card-header {
+        display: flex;
+        .card-avatar {
+            margin: 10px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .card-personal {
+            margin: 7.5px 0 0 10px;
+            
+            .card-personal-name {
+                font-size: 1.35rem;
+                font-weight: bold;
+            }
+
+            .card-personal-date {
+                font-size: 1.15rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .card-comment {
+        color: #5A736E;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: 10px 5px;
+    }
+}
 </style>
