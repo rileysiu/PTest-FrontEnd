@@ -178,10 +178,10 @@ const cardData = reactive([
 
     .feature-block {
         .feature-group {
-            width: 95%;
+            width: 100%;
             .feature-card {
-                width: 190px;
-                min-width: 190px;
+                width: 250px;
+                min-width: 250px;
                 height: 23rem;
                 margin: 10px 5px;
                 padding: 2px;
@@ -195,6 +195,46 @@ const cardData = reactive([
                 .feature-card-content {
                     margin-top: 10px;
                     font-size: 1.1rem;
+                    color: #5A736E;
+                    letter-spacing: 0.045rem;
+                    line-height: 1.85rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .title-block {
+        .subtitle-text {
+            width: 20rem;
+            margin: 20px 40px 0 40px;
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: 0.225rem;
+        }
+    }
+
+    .feature-block {
+        .feature-group {
+            width: 100%;
+            .feature-card {
+                width: 170px;
+                min-width: 150px;
+                height: 23rem;
+                margin: 10px 5px;
+                padding: 2px;
+                
+                .feature-card-title {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    letter-spacing: 0.06rem;
+                }
+
+                .feature-card-content {
+                    margin-top: 10px;
+                    font-size: 1rem;
                     color: #5A736E;
                     letter-spacing: 0.045rem;
                     line-height: 1.85rem;

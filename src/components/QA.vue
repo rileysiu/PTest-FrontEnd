@@ -231,7 +231,7 @@ const judgeActive = (data) => {
     }
 
     :deep(.el-collapse-item__header) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: bold;
         letter-spacing: 0.01rem;
         justify-content: space-between;
